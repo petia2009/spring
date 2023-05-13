@@ -10,7 +10,6 @@ public class LoginController {
     @GetMapping("/")
     public String login(Model model) {
         model.addAttribute("user", new User());
-        model.addAttribute("error", "");
         return "login";
     }
 }
